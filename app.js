@@ -8,7 +8,7 @@ function main() {
   var links = [
     {name: 'Home',
     url: '/'},
-    {name: 'Quotes',
+    {name: 'Wisdom',
       url: '/quotes'}
   ]
 

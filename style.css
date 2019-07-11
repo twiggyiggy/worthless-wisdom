@@ -15,7 +15,6 @@ orange: rgb(255,138,71)
 light turquoise: rgb(140,238,238)
 dark turquoise: rgb(38,191,191)
 yellow: rgb(255,215,71)
-
 */
 
 
@@ -32,15 +31,23 @@ body {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 8vh;
   line-height: 1em;
   margin: 0;
-
 }
 
-h2 {}
+h2 {
+  margin-bottom: 0;
+  line-height: 1.2em;
+}
 
-h3 {}
+h3 {
+  font-size: 1.2em;
+}
+
+.author {
+  text-align: right;
+}
 
 p {
   margin: 0;
@@ -57,20 +64,25 @@ p {
   background-color: rgba(252,97,112,0.9);
   text-align: center;
   position: fixed;
-  z-index: 999;
   width: 100%;
   top: 0;
+  height: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #site-footer {
   color: white;
   padding: 60px 0;
   background: rgba(252,97,112,0.9);
+  margin-top: 0;
 }
 
 #site-main {
   /* margin-bottom: 60px; */
-  margin-top: 7em;
+  margin-top: 4em;
+  margin-bottom: 0;
 }
 
 nav ul {
@@ -97,7 +109,16 @@ nav li {
 }
 
 .container {
-  margin: 0 20px;
+  padding: 20px 20px;
+  /* background-image: url('./images/buildings-sky-bg.jpg'); */
+  background-size: cover;
+  width: 100%;
+}
+
+.card-container {
+  margin: 20px;
+  padding: 1em;
+  border: 1px solid black;
 }
 
 .section {

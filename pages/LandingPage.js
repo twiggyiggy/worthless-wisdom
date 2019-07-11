@@ -7,10 +7,10 @@ function LandingPage(parentElement) {
 
 LandingPage.prototype.generate = function() {
   this.elements = `
-    <header>
-      <h1>Worthless Wisdom</h1>
+    <section class="container">
+      <h1>Worthless<br>Wisdom</h1>
       <h2>A simple, utterly useless tool to help you deal with anxiety and depression.</h2>
-    </header>
+    </section>
   `;
   this.render();
 }

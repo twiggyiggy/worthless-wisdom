@@ -14,19 +14,21 @@ QuotesPage.prototype.generate = async function() {
   await this.connectToAPI();
   //console.log(this.quotes);
   this.elements = `
-    <header>
-      <h2>Inspiational quotes have been scietifically proven to be completely useless when dealing with depression. Feeling shit but skeptical? Try it yourself!</h2>
-    </header>
-    <section class="cards-container">
+    <section class="container">
+      <h3>Inspirational quotes have been scietifically proven to be completely useless when dealing with depression. Skeptical? Try it yourself.</h3>
+    </section>
+    <section class="card-container">
   `;
   this.elements += `
       <article>
-        <h3><i>${this.quotes.quoteText}</i></h3>
-        <p>${this.quotes.quoteAuthor}</p>
+        <h3><i>${this.quotes.quote}</i></h3>
+        <h3 class="author"><i>~Kanye West</i></h3>
       </article>
-      <button>Try again!</button>
-    `
-  this.elements += '</section>'
+    `;
+  this.elements += `
+            <button class="btn-new-quote"></button>
+          </section>
+  `
   this.render();
 }
 
