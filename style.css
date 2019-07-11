@@ -17,6 +17,21 @@ dark turquoise: rgb(38,191,191)
 yellow: rgb(255,215,71)
 */
 
+/* Color Theme Swatches in Hex */
+.Teal--Coral-Spectrum-1-hex { color: #BAF2E8; }
+.Teal--Coral-Spectrum-2-hex { color: #218DA6; }
+.Teal--Coral-Spectrum-3-hex { color: #FFFFF0; }
+.Teal--Coral-Spectrum-4-hex { color: #FEB2AD; }
+.Teal--Coral-Spectrum-5-hex { color: #F56358; }
+
+/* Color Theme Swatches in RGBA */
+.Teal--Coral-Spectrum-1-rgba { color: rgba(186, 242, 232, 1); }
+.Teal--Coral-Spectrum-2-rgba { color: rgba(33, 140, 165, 1); }
+.Teal--Coral-Spectrum-3-rgba { color: rgba(255, 255, 239, 1); }
+.Teal--Coral-Spectrum-4-rgba { color: rgba(253, 177, 172, 1); }
+.Teal--Coral-Spectrum-5-rgba { color: rgba(244, 98, 87, 1); }
+
+
 
 /* ---- typography ---- */
 
@@ -34,11 +49,13 @@ h1 {
   font-size: 8vh;
   line-height: 1em;
   margin: 0;
+  color: rgba(33, 140, 165, 1);
 }
 
 h2 {
   margin-bottom: 0;
   line-height: 1.2em;
+  color: rgba(33, 140, 165, 1);
 }
 
 h3 {
@@ -61,7 +78,7 @@ p {
   margin: 0;
   padding: 2% 0;
   color: white;
-  background-color: rgba(252,97,112,0.9);
+  background-color: rgba(253, 177, 172, 1);
   text-align: center;
   position: fixed;
   width: 100%;
@@ -75,7 +92,7 @@ p {
 #site-footer {
   color: white;
   padding: 60px 0;
-  background: rgba(252,97,112,0.9);
+  background: rgba(186, 242, 232, 1);
   margin-top: 0;
 }
 
@@ -110,7 +127,7 @@ nav li {
 
 .container {
   padding: 20px 20px;
-  /* background-image: url('./images/buildings-sky-bg.jpg'); */
+  background-image: url();
   background-size: cover;
   width: 100%;
 }
