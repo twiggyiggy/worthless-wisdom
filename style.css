@@ -1,0 +1,130 @@
+/* ---- reset ---- */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* color palette
+pink: rgb(252,97,112)
+orange: rgb(255,138,71)
+light turquoise: rgb(140,238,238)
+dark turquoise: rgb(38,191,191)
+yellow: rgb(255,215,71)
+
+*/
+
+
+/* ---- typography ---- */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 147%;
+  height: 200vh;
+}
+
+h1 {
+  font-size: 4em;
+  line-height: 1em;
+  margin: 0;
+
+}
+
+h2 {}
+
+h3 {}
+
+p {
+  margin: 0;
+}
+
+
+
+/* ---- layout ---- */
+
+#site-header {
+  margin: 0;
+  padding: 2% 0;
+  color: white;
+  background-color: rgba(252,97,112,0.9);
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+}
+
+#site-footer {
+  color: white;
+  padding: 60px 0;
+  background: rgba(252,97,112,0.9);
+}
+
+#site-main {
+  /* margin-bottom: 60px; */
+  margin-top: 7em;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2em;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: rgb(38,191,191);
+}
+
+nav li {
+  margin: 1em;
+}
+
+.container {
+  margin: 0 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 728px;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+/* ---- components ---- */
+
+.button {
+  width: 100%;
+  background-color: blue;
+  color: #fff;
+  border: 1px solid #fff
+}
+
+.button-alt {
+  color: blue;
+  background-color: #fff;
+}
