@@ -15,14 +15,14 @@ QuotesPage.prototype.generate = async function() {
   //console.log(this.quotes);
   this.elements = `
     <section class="container container-quotes">
-      <h1>Skeptical? You should be.</h1>
-      <div class="icon-text-wrapper">
+      <h1 class="slide-in-bottom">Skeptical? You should be.</h1>
+      <div class="icon-text-wrapper slide-in-bottom">
         <div class="icon">
           <img src="./images/science-icon-white.png">
         </div>
         <h3>Inspirational quotes have been scietifically proven to be completely useless when dealing with depression. Try it yourself.</h3>
       </div>
-      <section class="card-container">
+      <section class="card-container slide-in-bottom">
   `;
   this.elements += `
       <article>
@@ -32,7 +32,7 @@ QuotesPage.prototype.generate = async function() {
     `;
   this.elements += `
           </section>
-            <input class="btn-new-quote" type="button" value="Get another quote">
+            <input class="btn-new-quote slide-in-bottom" type="button" value="Get another quote">
         </section>
   `
   this.render();

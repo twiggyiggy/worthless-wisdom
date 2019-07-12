@@ -10,7 +10,7 @@ function Navbar(parentElement, links, style) { // PARENT ELEMENT?
 
 Navbar.prototype.generate = function() {
     // dynamically generate elements
-  this.elements = `<div class="icon icon-lightbulb">
+  this.elements = `<div class="icon icon-lightbulb pulsate-fwd">
                       <img src="./images/lightbulb-icon-white.png">
                     </div>
                     <nav>
