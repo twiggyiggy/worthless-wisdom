@@ -20,7 +20,7 @@ QuotesPage.prototype.generate = async function() {
         <div class="icon">
           <img src="./images/science-icon-white.png">
         </div>
-        <h3>Inspirational quotes have been scietifically proven to be completely useless when dealing with depression. Try it yourself.</h3>
+        <h3>Inspirational quotes have been scietifically proven to be completely useless when dealing with depression and/or anxiety. Try it yourself.</h3>
       </div>
       <section class="card-container slide-in-bottom">
   `;

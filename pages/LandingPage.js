@@ -10,6 +10,9 @@ LandingPage.prototype.generate = function() {
   this.addScrollEvent();
   this.elements = `
     <section class="container container-landing">
+      <div class="icon-logo slide-in-bottom">
+        <img src="./images/lightbulb-icon-big-white.png">
+      </div>
       <h1 class="landing-titles slide-in-bottom">Worthless Wisdom</h1>
       <h2 class="landing-titles slide-in-bottom">A simple, utterly useless tool to help you deal with anxiety and depression.</h2>
     </section>

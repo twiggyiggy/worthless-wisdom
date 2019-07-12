@@ -95,6 +95,10 @@ h2 {
   color: rgba(33, 140, 165, 1);
 }
 
+.container-loading {
+  height: 82vh;
+}
+
 .container-loading h3 {
   font-size: 1.7em;
 }
@@ -228,11 +232,17 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 82vh;
   /* height: 80vh; */
 }
 
 .icon {
   margin: 5px;
+}
+
+.icon-logo img {
+  width: 10em;
+  margin: 10px;
 }
 
 .icon img {
@@ -267,7 +277,7 @@ nav a:hover {
 }
 
 .section-testimonials {
-  background-image: url('./images/forest-bg-dark.jpg');
+  background-image: url('./images/forest-bg-darker.jpg');
   background-size: cover;
   height: 80vh;
   width: 100%;
