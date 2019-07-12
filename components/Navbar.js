@@ -5,6 +5,7 @@ function Navbar(parentElement, links, style) { // PARENT ELEMENT?
   this.links = links;
   this.style = style;
   this.elements = null;
+  //generate(); SUPER EKSPERYMENT MARCELKA
 }
 
 Navbar.prototype.generate = function() {

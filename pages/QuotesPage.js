@@ -14,10 +14,11 @@ QuotesPage.prototype.generate = async function() {
   await this.connectToAPI();
   //console.log(this.quotes);
   this.elements = `
-    <section class="container">
-      <h3>Inspirational quotes have been scietifically proven to be completely useless when dealing with depression. Skeptical? Try it yourself.</h3>
-    </section>
-    <section class="card-container">
+    <section class="container container-quotes">
+      <h1>Skeptical? You should be.</h1>
+      <img src="./images/science-icon-white.png" width="30px">
+      <h3>Inspirational quotes have been scietifically proven to be completely useless when dealing with depression. Try it yourself.</h3>
+      <section class="card-container">
   `;
   this.elements += `
       <article>
@@ -26,10 +27,12 @@ QuotesPage.prototype.generate = async function() {
       </article>
     `;
   this.elements += `
-            <button class="btn-new-quote"></button>
           </section>
+            <input class="btn-new-quote" type="button" value="Get another quote">
+        </section>
   `
   this.render();
+  this.addListenersToButtons(); // call an event listener to buttons!
 }
 
 QuotesPage.prototype.render = function() {
@@ -39,3 +42,18 @@ QuotesPage.prototype.render = function() {
 QuotesPage.prototype.connectToAPI = async function() {
   this.quotes = await quotesServiceInstance.getAllQuotes();
 }
+
+QuotesPage.prototype.addListenersToButtons = function () {
+  var buttonNewQuote = document.querySelector('.btn-new-quote');
+  var self = this;
+  buttonNewQuote.addEventListener('click', (event) => {
+    buttonAction(event, self)
+  });
+}
+
+function buttonAction(event, self) {
+  self.generate();
+}
+
+
+{/* //<button class="btn-new-quote">More!</button> */}

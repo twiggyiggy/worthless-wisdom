@@ -15,7 +15,6 @@ QuotesService.prototype.getAllQuotes = async function() {
 // DO NOT DELETE LINES BELOW
 var quotesServiceInstance = new QuotesService();
 
-quotesServiceInstance.getAllQuotes();
 
 /*
 function QuotesService() {
