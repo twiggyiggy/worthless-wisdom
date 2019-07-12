@@ -16,8 +16,12 @@ QuotesPage.prototype.generate = async function() {
   this.elements = `
     <section class="container container-quotes">
       <h1>Skeptical? You should be.</h1>
-      <img src="./images/science-icon-white.png" width="30px">
-      <h3>Inspirational quotes have been scietifically proven to be completely useless when dealing with depression. Try it yourself.</h3>
+      <div class="icon-text-wrapper">
+        <div class="icon">
+          <img src="./images/science-icon-white.png">
+        </div>
+        <h3>Inspirational quotes have been scietifically proven to be completely useless when dealing with depression. Try it yourself.</h3>
+      </div>
       <section class="card-container">
   `;
   this.elements += `

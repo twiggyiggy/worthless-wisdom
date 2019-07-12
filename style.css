@@ -107,7 +107,7 @@ p {
   height: 5.5em;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 #site-footer {
@@ -115,6 +115,7 @@ p {
   padding: 1em 0;
   background: rgba(186, 242, 232, 1);
   margin-top: 0;
+  height: 10vh;
 }
 
 footer ul {
@@ -134,7 +135,7 @@ footer a {
   /* margin-bottom: 60px; */
   background-image: url('./images/sea-bg.jpg');
   background-size: cover;
-  margin-top: 5.5em;
+  margin-top: 5.4em;
   margin-bottom: 0;
   display: flex;
 }
@@ -172,21 +173,43 @@ nav a:hover {
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  height: 80vh;
 }
 
 .container-landing {
   padding: 12.3em 1em;
+  height: 80vh;
 }
 
 .loading-wrapper {
   padding: 22em 1em;
   text-align: center;
-
-
 }
 
 .container-quotes {
   padding: 10em 1em;
+}
+
+.icon {
+  margin: 5px;
+}
+
+
+
+.icon img {
+  width: 34px;
+}
+
+.icon-lightbulb img {
+  margin: 10px;
+  width: 40px;
+}
+
+
+
+.icon-text-wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .card-container {
