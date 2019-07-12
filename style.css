@@ -320,6 +320,9 @@ nav a:hover {
   h1.landing-titles {
     font-size: 6em;
   }
+  .card-container {
+    min-width: 40em;
+  }
 }
 
 
